@@ -1,0 +1,7 @@
+<div *ngIf="!loggedIn; else elseBlock">
+   LogIn page
+</div>
+
+<ng-template #elseBlock>
+  <app-dashboard-component></app-dashboard-component>
+</ng-template>
