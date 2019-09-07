@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponentComponent } from './dashboard/dashboard-component/dashboard-component.component';
-import {DashboardModule} from './dashboard/dashboard.module';
+import { DashboardModule } from './dashboard/dashboard.module';
+import { LoginModule } from './login/login.module'
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import {DashboardModule} from './dashboard/dashboard.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DashboardModule
+    DashboardModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]

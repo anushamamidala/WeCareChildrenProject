@@ -1,0 +1,120 @@
+.login-container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.login-div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tint-overlay {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background: #564a4670;
+}
+
+.login-change-images {
+    height: 100%;
+    width: 100%;
+    animation: animateImage 20s infinite step-end;
+}
+
+.left-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.right-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #252030;
+}
+
+.custom-input-box {
+    margin: 10px;
+    width: 250px;
+    max-width: 300px;
+    height: 40px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding-left: 10px;
+    background: #252030;
+    outline: none;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.login-button {
+    margin-right: 10px;
+    width: 100px;
+    height: 40px;
+    background: rgba(167, 69, 56, 0.9);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.motherImages {
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caption {
+    font-size: 50px;
+    font-weight: bold;
+    color: lightgray;
+    z-index: 99;
+    width: 250px;
+    letter-spacing: 2px;
+}
+
+.justify-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+}
+
+@keyframes animateImage {
+    0% {
+        background-image: url("../../assets/mother1.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    33% {
+        background-image: url("../../assets/mother2.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    66% {
+        background-image: url("../../assets/mother3.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    100% {
+        background-image: url("../../assets/mother3.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}
