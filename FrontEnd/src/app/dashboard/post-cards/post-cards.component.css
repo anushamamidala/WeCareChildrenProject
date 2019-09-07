@@ -1,0 +1,21 @@
+.post-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #efefef;
+    background-color: #fff;
+    border-radius: 4px;
+    border-bottom: 1px solid #e2e2e2;
+    margin:20px;
+    padding: 16px;
+    padding-top: 16px;
+    width:40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.user-profile-image{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}

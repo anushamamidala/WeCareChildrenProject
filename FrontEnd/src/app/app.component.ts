@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'We Care';
-  loggedIn:boolean=false;
+  loggedIn:boolean=true;
 }

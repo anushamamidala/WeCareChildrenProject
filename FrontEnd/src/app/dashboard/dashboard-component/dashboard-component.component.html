@@ -1,16 +1,18 @@
-<div class="container">
-        <div class="row">
-    <nav class="navbar fixed-top navbar-light shadow-lg p-3 mb-5 rounded">
-      <a class="navbar-brand" href="#">Navbar</a>
-    </nav>
-        </div>
-        <div class="row">
-    
-        <div class="col-6" style="background-color: blue">
-            akjsflkajsfmaslsfjlasmsflajslfasljfanflaj
-        </div>
-        <div class="col-6">
-            akjffrkajfsnasklfjal,nfajf
-        </div>
-    </div>
-  </div>
+<div class="custom-nav-bar">
+    <span class="custom-title">WE CARE</span>
+    <span class="logout-button">Logout</span>
+</div>
+<div class="search-container">
+    <input class="custom-search" placeholder="Search..." type="search" />
+    <ul class="custom-list">
+    <li class="custom-list-item" *ngFor="let nav of customNavList" [style.opacity]="
+   (selectedNavItem &&  selectedNavItem.ListItemId  === nav.ListItemId) ? 1:0.2" (click)="onChangeFilter(nav)">
+             <i [class]="nav.ListItemIcon" 
+                style="margin-right: 5px;"> </i> {{nav.ListItemName}} </li>
+    </ul>
+</div>
+
+
+<div class="post-card-alignment">
+    <app-post-cards></app-post-cards>
+</div>
